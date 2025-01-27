@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+    <title>Daniel Barrientos</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/smooch_Sans.css">
+    <link rel="stylesheet" href="css/lora.css">
+    <link rel="stylesheet" href="icons/icomoon/style.css">
+    <link rel="stylesheet" href="css/desing.css">
+    <meta name="keywords" content="Desarrollador Web, Diseñador Web, Programador">
+    <meta name="description" content="Desarrollador Web profecional para tu empresa o negocio">
+    <meta name="owner" content="Daniel Barrientos Salas">
+    <meta name="author" content="Daniel Barrientos Salas">
+    <meta name="robots" content="index, follow">
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="Daniel Barrientos.html">
+                <figure><img src="img/Logo Prueba.png" 
+                    alt=""></figure>
+            </a>
+            <a href="Daniel Barrientos.html">Daniel Barrientos</a>
+        </h1>
+        <nav id="ioMenu">
+            <figure id="Menu" class="ioMenuMovile Menu" onclick="displayMenu()">
+                <img src="img/Menu.png" alt="">
+            </figure>
+            <div id="card_menu">
+                <figure id="hideMenu" class="ioMenuMovile Menu" onclick="displayMenu()">
+                    <img src="img/Menu.png" alt="">
+                </figure>
+                <figure>
+                    <img id="logo_menu" src="img/Logo Prueba.png" alt="">
+                </figure>
+                <ul>
+                    <li><a onclick = "navSection('Inicio')" href="#">Inicio</a></li>
+                    <li><a onclick = "navSection('Sobremi')" href="#">Sobre mi</a></li>
+                    <li><a onclick = "navSection('Portafolio')" href="#">Portafolio</a></li>
+                    <li><a onclick = "navSection('Contacto')" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="slider">
+        <section class="slide"id ="Inicio" style="display: block;">
+            <div class="mainlogo">
+                <h2>
+                    Daniel Barrientos
+                    <strong>Desarrollador Web</strong>
+                </h2>
+                <figure><img src="img/Logo Prueba.png" alt=""></figure>
+            </div>
+            <a class="button_principal" id="Contactame" onclick = "navSection('Contacto')" href="#">Contactame</a>
+            <a class="button_principal" id="Descargar" target="_blank" href="doc/Daniel_Barientos_Salas_402700383.pdf">Descargar CV</a>
+        </section>
+
+        <section class="slide" id ="Sobremi" style="display: none;">
+
+        </section>
+
+        <section class="slide" id ="Portafolio" style="display: none;">
+
+        </section>
+
+        <section class="slide" id ="Contacto" style="display: none;">
+
+        </section>
+
+    </div>
+
+
+    <div class="icon-bubbles2" id = "button_contact"  onclick="displayForm()">
+    </div>
+    <div id="contact_form">
+        <form action="contact.php" id="form1" name="form1" method="post">
+            <div class = "icon-cross"id="close_form" onclick="displayForm()"></div>
+            <p class="icon-envelop" id = "logo_sobre"></p>
+            <p id="hola">Dime que te interesa!</p>
+            <input type="text" id="name" name="name" placeholder="Nombre">
+            <input type="text" id="email" name="email" placeholder="Email">
+            <textarea name="message" id="message" placeholder="Enviame un Mensaje"></textarea>
+            <input type="submit" name="submit" id="button" value="ENVIAR">
+        </form>
+    </div>
+    <footer>
+        <div class="rrss">
+            <a target="_blank" href="https://www.facebook.com/daniel.barrientos.5602728" class="icon-facebook"></a>
+            <a target="_blank" href="https://www.instagram.com/danielss2697/" class="icon-instagram"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/daniel-barrientos-1a7218340" class="icon-linkedin2"></a>
+        </div>
+        <p>© 2025 Daniel Barrientos</p>
+    </footer>
+    <script>
+        function displayMenu(){
+            var display;
+            var menu = document.getElementById("card_menu");
+            display = card_menu.style.display;
+
+            if(display == 'none'){
+                card_menu.style.display = "block";
+            }else{
+                card_menu.style.display = "none";
+            }
+        }
+        function displayForm(){
+            var display;
+            var menu = document.getElementById("contact_form");
+            display = contact_form.style.display;
+
+            if(display == 'none'){
+                contact_form.style.display = "block";
+            }else{
+                contact_form.style.display = "none";
+            }
+        }
+
+        function navSection(nav){
+            var section = new Array(4);
+            section[0] = "Inicio";
+            section[1] = "Sobremi";
+            section[2] = "Portafolio";
+            section[3] = "Contacto";
+
+            var search;
+            var show;
+
+            for(var i = 0 ; i<4; i++){
+                search = document.getElementById(section[i]);
+                search.style.display = "none";
+
+                if(section[i] == nav){
+                    search.style.display = "block";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'smooch_sans';
+    src: url('fonts/Smooch_Sans/SmoochSans-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+body{
+    font-family: 'smooch_sans', 'lora', sans-serif;
+}

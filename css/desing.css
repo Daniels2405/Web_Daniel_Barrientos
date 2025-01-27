@@ -1,0 +1,390 @@
+body{
+    font-size: 40pt;
+    position: relative;
+    background: black;
+}
+header{
+    background-color: #3d3d3d;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    z-index: 50;
+}
+header h1{
+    display: none;
+}
+h1{
+    font-family: "Lora", serif;
+}
+header nav .ioMenuMovile{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    margin: 0px 0px 0px 20px;
+    padding: 5px;
+}
+header nav .ioMenuMovile img{
+    width: 100%;
+}
+#card_menu{
+    display: none;
+    position: relative;
+    height: 100%;
+    width: 170px;
+    top: -60px;
+    left: 0px;
+    border-right: 3px solid #888888;
+    border-bottom: 3px solid #888888;
+    z-index: 100;
+    padding-bottom: 30px;
+    background: #3d3d3d;
+}
+#card_menu #logo_menu{
+    width: 120px;
+    height: 80%;
+    margin-left: -20px;
+}
+#card_menu #logo_menu img{
+    width: 100%;
+}
+#card_menu ul li{
+    list-style: none;
+    font-size: 28px;
+    line-height: 70px;
+}
+#card_menu ul li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+#slider{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+#slider .slide{
+    position: relative;
+    width: 100%;
+    top: -35px;
+    left: 0px;
+    background-color: #000000;
+}
+#slider #Inicio{
+    width: 100%;
+    height: 100%;
+    font-family: "Lora", serif;
+    text-align: center;
+    padding-bottom: 50px;
+    color: white;
+}
+#slider #Inicio .mainlogo{
+    position: relative;
+    width: 60vw;
+    margin-left: 20vw;
+    min-height: 430px;
+}
+#slider #Inicio .mainlogo h2, h2::after{
+    font-size: 29px;
+    padding-top: 80px;
+}
+#slider #Inicio .mainlogo h2 strong, h2 strong::after{
+    font-size: 34px;
+    display: block;
+}
+#slider #Inicio .mainlogo h2, h2::after, h2 strong, h2 strong::after{
+    background: linear-gradient(90deg in lch longer hue, oklch(105% 90% 0) 0 0);
+    background-size: 500% 100%;
+    animation: blend 30s infinite linear;
+    color: transparent;
+    background-clip: text;
+}
+#slider #Inicio .mainlogo h2 strong::after, h2::after{
+    content: '';
+    filter: blur(8px);
+  position: absolute;
+  left: 0;
+  mix-blend-mode: plus-lighter;
+}
+@keyframes blend {
+    to { background-position: 500% 100%; }
+}
+#slider #Inicio .mainlogo figure img{
+    width: 100%;
+    max-width: 250px;
+    margin-top: 0px;
+}
+#slider #Inicio .button_principal{
+    text-decoration: none;
+    font-size: 30px;
+    width: 40%;
+    height: 60px;
+    margin: 5px 2.5%;
+    border-radius: 11px 11px 11px 11px;
+    position: relative;
+}
+#Contactame, #Contactame::after{
+    color: black;
+    
+    border: 2px solid white;
+    background: linear-gradient(90deg in lch longer hue, oklch(105% 90% 0) 0 0);
+    background-size: 500% 100%;
+    animation: blend 30s infinite linear;
+    left: 30px;
+}
+#Contactame::after{
+    content: '';
+    filter: blur(8px);
+  position: absolute;
+  left: 0;
+  mix-blend-mode: plus-lighter;
+}
+#Descargar{
+    background: #5d5d5d;
+    color: white;
+    left: 30px;
+    border: 2px solid #d1d1d1;
+}
+#slider #Sobremi{
+    background: #ffdb00;
+    width: 100%;
+    height: 100%;
+}
+#slider #Portafolio{
+    background: #c30b0b;
+    width: 100%;
+    height: 100%;
+}
+#slider #Contacto{
+    background: #0cd144;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#button_contact{
+    background: #ffdb00;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 15px;
+    top: 85vh;
+    border-radius: 50%;
+    z-index: 80;
+    font-size: 45px;
+    padding: 10px 0px 0px 10px;
+    transition-duration: 0.5s;
+    background: linear-gradient(90deg in lch longer hue, oklch(105% 90% 0) 0 0);
+    background-size: 500% 100%;
+    animation: blend 30s infinite linear;
+}
+#button_contact::after{
+    content: '';
+    filter: blur(8px);
+  position: absolute;
+  left: 0;
+  mix-blend-mode: plus-lighter;
+}
+#button_contact:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px white;
+}
+#contact_form{
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    background: #b0b0b0;
+    right: 0px;
+    top: 60px;
+    z-index: 99;
+    border-right: none;
+    box-shadow: 0px 0px 10px #0a155c;
+    font-family: "smooch_sans", sans-serif;
+    display: none;
+}
+#contact_form #close_form{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 85%;
+    top: 3px;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    transition-duration: 0.5s;
+}
+#contact_form #close_form:hover{
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 20px white);
+}
+#contact_form #logo_sobre{
+    width: 100%;
+    height: 150px;
+    font-size: 150px;
+    text-align: center;
+    margin: 0px;
+    color: black;
+}
+#contact_form #hola{
+    width: 80%;
+    height: 30px;
+    font-size: 28px;
+    text-align: left;
+    margin-left: 5px;
+}
+#contact_form input,
+#contact_form textarea{
+    display: block;
+    margin: 10px;
+    width: 90%;
+    border: none;
+    border-bottom: 2px solid black;
+    margin-left: 5px;
+    margin-bottom: 40px;
+    padding-bottom: 3px;
+    font-size: 25px;
+    background: #b0b0b0;
+}
+#contact_form #button{
+    background: #ffdb00;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 30px 30px 30px 30px;
+    transition-duration: 1s;
+}
+#contact_form #button:hover{
+    cursor: pointer;
+    box-shadow: 0px 8px 20px black;
+}
+footer{
+    width: 100%;
+    height: 130px;
+    bottom: -13vh;
+    background: #4f4f4f;
+    color: white;
+    text-align: center;
+    z-index: 70;
+    position: fixed;
+    transition-duration: 0.7s;
+}
+footer:hover{
+    bottom: 0vh;
+}
+footer::before{
+    content: '';
+    border-style: solid;
+    border-width: 20px 20px 20px 20px;
+    border-color: transparent transparent #4f4f4f transparent;
+    position: absolute;
+    left: 50%px;
+    top: -40px;
+}
+footer .rrss{
+    margin-top: 40px;
+    width: 100%;
+    height: 60px;
+}
+footer .rrss a{
+    display: inline-block;
+    width: 25%;
+    height: 40px;
+    color: white;
+    display: inline-block;
+    font-size: 40px;
+    text-align: center;
+    left: 20px;
+    position: relative;
+}
+footer p{
+    font-size: 15px;
+    font-family: "smooch_sans", sans-serif;
+}
+@media screen and (min-width: 480px){
+}
+@media screen and (min-width: 600px){
+}
+@media screen and (min-width: 768px){
+    header{
+        height: 100px;
+    }
+    header h1{
+        display: inline-block;
+        width: 45%;
+        margin: 0px;
+        height: 100px;
+        margin-left: 10px;
+        line-height: 80px;
+    }
+    header h1>a{
+        color: white;
+        text-decoration: none;
+        vertical-align: middle;
+        display: inline-block;
+        font-size: 28px;
+        margin: 0px;
+    }
+    header h1 figure{
+        width: 70px;
+        height: 70px;
+        margin: 0px;
+        margin-right: -20px;
+    }
+    header h1 figure img{
+        width: 100%;
+    }
+    header nav{
+        display: inline-block;
+        vertical-align: right;
+        height: 100%;
+        width: 50%;
+        position: relative;
+        margin-top: -30px;
+    }
+    header nav #Menu, nav #hideMenu, nav figure{
+        display: none;
+    }
+    nav #card_menu{
+        display: active;
+        display: inline-block;
+        background: none;
+        border: none;
+        position: relative;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        text-align: right;
+    }
+    nav #card_menu ul{
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+    }
+    nav #card_menu ul li{
+        display: inline-block;
+        width: 70px;
+        text-align: center;
+        font-size: 25px;
+        margin: 0px;
+        margin-top: 40px;
+        line-height: normal;
+    }
+    #contact_form{
+        top: 100px;
+    }
+    #contact_form input,
+    #contact_form textarea{
+        font-size: 28px;
+    }
+    #slider #Inicio .mainlogo h2{
+        font-size: 40px;
+        padding-top: 60px;
+    }
+    #slider #Inicio .mainlogo h2 strong{
+        font-size: 45px;
+    }
+    #slider #Inicio .button_principal{
+        font-size: 45px;
+        width: 50%;
+    }
+
+}
+@media screen and (min-width: 950px){
+}
