@@ -91,22 +91,33 @@ header nav .ioMenuMovile img{
     font-size: 34px;
     display: block;
 }
-#slider #Inicio .mainlogo h2, h2::after, h2 strong, h2 strong::after{
-    background: linear-gradient(90deg in lch longer hue, oklch(105% 90% 0) 0 0);
-    background-size: 500% 100%;
-    animation: blend 30s infinite linear;
-    color: transparent;
-    background-clip: text;
+#slider #Inicio .mainlogo h2{
+    color: azure;
+    --color1: #ffc9f3;
+    --color2: #ff93e7;
+    --color3: #ca1f7b;
+    --color4: magenta;
+    --color5: #b81d70;
+    text-shadow: 
+    0 0 10px var(--color1),
+    0 0 20px var(--color2),
+    0 0 40px var(--color3),
+    0 0 80px var(--color4),
+    0 0 100px var(--color4);
 }
-#slider #Inicio .mainlogo h2 strong::after, h2::after{
-    content: '';
-    filter: blur(8px);
-  position: absolute;
-  left: 0;
-  mix-blend-mode: plus-lighter;
-}
-@keyframes blend {
-    to { background-position: 500% 100%; }
+#slider #Inicio .mainlogo h2 strong{
+    color: #e2fefe;
+    --color1: #b1fdfe;
+    --color2: #80fdff;
+    --color3: #4ffcff;
+    --color4: #1efbff;
+    --color5: #00e9ec;
+    text-shadow: 
+    0 0 10px var(--color1),
+    0 0 20px var(--color2),
+    0 0 40px var(--color3),
+    0 0 80px var(--color4),
+    0 0 100px var(--color4);
 }
 #slider #Inicio .mainlogo figure img{
     width: 100%;
@@ -145,16 +156,107 @@ header nav .ioMenuMovile img{
     border: 2px solid #d1d1d1;
 }
 #slider #Sobremi{
-    background: #ffdb00;
     width: 100%;
-    height: 100%;
+    height: 140%;
     font-family: "Lora", serif;
     text-align: center;
-    padding-bottom: 50px;
     color: white;
+    padding-bottom: 10px;
+}
+#Sobremi #informacion{
+    width: 90%;
+    margin-left: 5%;
+    color: white;
+    text-align: center;
+}
+#informacion h3, h3::after{
+    font-size: 29px;
+    padding-top: 30px;
+}
+#informacion h3 strong, h3 strong::after{
+    font-size: 34px;
+    display: block;
+}
+#informacion h3, h3::after, h3 strong, h3 strong::after{
+    color: #e2fefe;
+    --color1: #b1fdfe;
+    --color2: #80fdff;
+    --color3: #4ffcff;
+    --color4: #1efbff;
+    --color5: #00e9ec;
+    text-shadow: 
+    0 0 10px var(--color1),
+    0 0 20px var(--color2),
+    0 0 40px var(--color3),
+    0 0 80px var(--color4),
+    0 0 100px var(--color4);
+}
+#informacion figure{
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    margin-left: 0px;
+    margin-top: -30px;
+}
+#informacion figure img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+#informacion p{
+    font-size: 20px;
+    margin-top: -40px;
+    text-align: left;
+    font-family: "smooch_sans", sans-serif;
+}
+#informacion h3, h3::after, h4 ,h4::after{
+    color: azure;
+    --color1: #ffc9f3;
+    --color2: #ff93e7;
+    --color3: #ca1f7b;
+    --color4: magenta;
+    --color5: #b81d70;
+    text-shadow: 
+    0 0 10px var(--color1),
+    0 0 20px var(--color2),
+    0 0 40px var(--color3),
+    0 0 80px var(--color4),
+    0 0 100px var(--color4);
+}
+#formacion{
+    width: 90%;
+    margin-left: 5%;
+    color: white;
+    text-align: left;
+    font-size: 25px;
+}
+#formacion p, #formacion li{
+    font-family: "smooch_sans", sans-serif;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+#formacion p{
+    margin-top: -30px;
+}
+#certificaciones{
+    width: 90%;
+    margin-left: 5%;
+    color: white;
+    text-align: left;
+    font-size: 25px;
+}
+#certificaciones p, #certificaciones li{
+    font-family: "smooch_sans", sans-serif;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+#certificaciones #Cisco{
+    margin-top: -30px;
+}
+#certificaciones #Udemy{
+    margin-top: 10px;
 }
 #slider #Portafolio{
-    background: #c30b0b;
     width: 100%;
     height: 100%;
     font-family: "Lora", serif;
@@ -269,16 +371,14 @@ header nav .ioMenuMovile img{
 footer{
     width: 100%;
     height: 130px;
-    bottom: -13vh;
     background: #4f4f4f;
     color: white;
     text-align: center;
     z-index: 70;
-    position: fixed;
+    position: relative;
     transition-duration: 0.7s;
-}
-footer:hover{
-    bottom: 0vh;
+    display: none;
+    position: fixed;
 }
 footer::before{
     content: '';
@@ -396,7 +496,34 @@ footer p{
         font-size: 45px;
         width: 50%;
     }
+    #slider #informacion {
+        background-color: #00e9ec;
+        height: 350px;
+    }
+    #slider #informacion h3{
+        text-align: left;
+    }
+    #slider #informacion figure{
+        position: absolute;
+        background-color: rebeccapurple;
+        width: 250px;
+        align-self: center;
+    }
+    footer{
+        bottom: -13vh;
+        position: fixed;
+        display: inline-block;
+    }
+    footer:hover{
+        bottom: 0vh;
+    }
+    footer::before{
+        display: inline-block;
+    }
 
 }
 @media screen and (min-width: 950px){
+}
+@keyframes blend {
+    to { background-position: 500% 100%; }
 }
