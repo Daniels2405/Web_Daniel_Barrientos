@@ -1,3 +1,8 @@
+@property --rotation {
+	syntax: "<angle>";
+	initial-value: 0turn;
+	inherits: false;
+}
 body{
     font-size: 40pt;
     position: relative;
@@ -136,7 +141,6 @@ header nav .ioMenuMovile img{
 #Contactame, #Contactame::after{
     color: black;
     
-    border: 2px solid white;
     background: linear-gradient(90deg in lch longer hue, oklch(105% 90% 0) 0 0);
     background-size: 500% 100%;
     animation: blend 30s infinite linear;
@@ -153,7 +157,6 @@ header nav .ioMenuMovile img{
     background: #5d5d5d;
     color: white;
     left: 30px;
-    border: 2px solid #d1d1d1;
 }
 #slider #Sobremi{
     width: 100%;
@@ -209,7 +212,7 @@ header nav .ioMenuMovile img{
     text-align: left;
     font-family: "smooch_sans", sans-serif;
 }
-#informacion h3, h3::after, h4 ,h4::after{
+#informacion h3, #informacion h3::after, h4, h4::after{
     color: azure;
     --color1: #ffc9f3;
     --color2: #ff93e7;
@@ -263,6 +266,47 @@ header nav .ioMenuMovile img{
     text-align: center;
     padding-bottom: 50px;
     color: white;
+}
+#Portafolio{
+    font-size: 40px;
+}
+#Portafolio .port_card{
+    width: 80%;
+    height: 200px;
+    margin-bottom: 20px;
+    top: 0px;
+    left: 0%;
+    position: relative;
+    aspect-ratio: 1;
+    box-shadow: 0 0 40px hsl(0, 255, 255, 0.05);
+    display: inline-block;
+}
+#Portafolio .port_card::before{
+    position: absolute;
+    inset: 0;
+    content: "";
+    z-index: -2;
+    background-image: conic-gradient(
+			from var(--rotation, 0turn),
+			#007498,
+			#00d493,
+			#d91982,
+			#f5a95b,
+			#007498
+		);
+    animation: 7s hue-rotation infinite linear;
+}
+#Portafolio .port_card::after{
+    position: absolute;
+    width: 94%;
+    height: 94%;
+    top: 3%;
+    left: 3%;
+    border-radius: 0.7rem;
+    content: "";
+    z-index: -1;
+    background: #000000;
+    filter: blur(12px);
 }
 #slider #Contacto{
     background: #0cd144;
@@ -409,6 +453,10 @@ footer p{
     font-size: 15px;
     font-family: "smooch_sans", sans-serif;
 }
+.neon{
+    box-shadow: 0 0 40px hsl(0, 255, 255, 0.05);
+    aspect-ratio: 1;
+}
 @media screen and (min-width: 480px){
 }
 @media screen and (min-width: 600px){
@@ -497,20 +545,37 @@ footer p{
         width: 50%;
     }
     #slider #informacion {
-        background-color: #00e9ec;
         height: 350px;
+        margin-top: 40px;
     }
     #slider #informacion h3{
         text-align: left;
     }
+
     #slider #informacion figure{
         position: absolute;
-        background-color: rebeccapurple;
         width: 250px;
-        align-self: center;
+        right: 0px;
+        top: 30px;
+    }
+    #slider #informacion p{
+        width: 63%;
+        margin-top: -20px;
+    }
+    #formacion{
+        width: 45%;
+    }
+    #certificaciones{
+        width: 45%;
+        display: inline-block;
+        margin-left: 50%;
+        margin-top: -117px;    
+    }
+    #certificaciones h4{
+    margin-top: 0px;
     }
     footer{
-        bottom: -13vh;
+        bottom: -16vh;
         position: fixed;
         display: inline-block;
     }
@@ -526,4 +591,12 @@ footer p{
 }
 @keyframes blend {
     to { background-position: 500% 100%; }
+}
+@keyframes hue-rotation {
+	from {
+		--rotation: 0turn;
+	}
+	to {
+		--rotation: 1turn;
+	}
 }
