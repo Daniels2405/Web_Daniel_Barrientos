@@ -280,6 +280,7 @@ header nav .ioMenuMovile img{
     aspect-ratio: 1;
     box-shadow: 0 0 40px hsl(0, 255, 255, 0.05);
     display: inline-block;
+    background-color: #000000;
 }
 #Portafolio .port_card::before{
     position: absolute;
