@@ -282,11 +282,15 @@ header nav .ioMenuMovile img{
     display: inline-block;
     background-color: #000000;
 }
+p{
+    color: white;
+    z-index: 2;
+}
 #Portafolio .port_card::before{
     position: absolute;
     inset: 0;
     content: "";
-    z-index: -2;
+    z-index: 1;
     background-image: conic-gradient(
 			from var(--rotation, 0turn),
 			#007498,
@@ -305,7 +309,7 @@ header nav .ioMenuMovile img{
     left: 3%;
     border-radius: 0.7rem;
     content: "";
-    z-index: -1;
+    z-index: 1;
     background: #000000;
     filter: blur(12px);
 }
