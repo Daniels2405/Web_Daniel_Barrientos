@@ -39,7 +39,6 @@
                     <li><a onclick = "navSection('Inicio')" href="#">Inicio</a></li>
                     <li><a onclick = "navSection('Sobremi')" href="#">Sobre mi</a></li>
                     <li><a onclick = "navSection('Portafolio')" href="#">Portafolio</a></li>
-                    <li><a onclick = "navSection('Contacto')" href="#">Contacto</a></li>
                 </ul>
             </div>
         </nav>
@@ -53,7 +52,7 @@
                 </h2>
                 <figure><img src="img/Logo Prueba.png" alt=""></figure>
             </div>
-            <a class="button_principal" id="Contactame" onclick = "navSection('Contacto')" href="#">Contactame</a>
+            <a class="button_principal" id="Contactame" onclick = "displayForm()" href="#">Contactame</a>
             <a class="button_principal" id="Descargar" target="_blank" href="doc/Daniel_Barientos_Salas_402700383.pdf">Descargar CV</a>
         </section>
         <section class="slide" id ="Sobremi" style="display: none;">
@@ -110,19 +109,17 @@
                 <h4>
                     Portafolio
                 </h4>
-                <div class="port_card neon">
-                    <p>s</p>
+                <div class="port_card neon" id="pagina_db">
+                    <figure><img src="img/Pagina_dbi.png" alt=""></figure>
+                    <h5>Pagina Web Daniel Barrientos</h5>
+                    <p>Esta pagina se realizo con el proposito de probar habilidades de diseño Web
+                        y para usarse como portafolio y forma de contacto ya sea clientes que 
+                        requieran un servicio o empresas en busqueda de desarrolladores web
+                    </p>
                 </div>
                 <div class="port_card neon"></div>
                 <div class="port_card neon"></div>
-                <div class="port_card neon"></div>
-                <div class="port_card neon"></div>
-                <div class="port_card neon"></div>
             </div>
-        </section>
-
-        <section class="slide" id ="Contacto" style="display: none;">
-
         </section>
 
     </div>
@@ -139,6 +136,10 @@
             <input type="text" id="email" name="email" placeholder="Email">
             <textarea name="message" id="message" placeholder="Enviame un Mensaje"></textarea>
             <input type="submit" name="submit" id="button" value="ENVIAR">
+            
+            <a target="_blank" href="https://www.facebook.com/daniel.barrientos.5602728" class="icon-facebook"></a>
+            <a target="_blank" href="https://www.instagram.com/danielss2697/" class="icon-instagram"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/daniel-barrientos-1a7218340" class="icon-linkedin2"></a>
         </form>
     </div>
     <footer>
@@ -172,18 +173,16 @@
                 contact_form.style.display = "none";
             }
         }
-
         function navSection(nav){
-            var section = new Array(4);
+            var section = new Array(3);
             section[0] = "Inicio";
             section[1] = "Sobremi";
             section[2] = "Portafolio";
-            section[3] = "Contacto";
 
             var search;
             var show;
 
-            for(var i = 0 ; i<4; i++){
+            for(var i = 0 ; i<3; i++){
                 search = document.getElementById(section[i]);
                 search.style.display = "none";
 
