@@ -1,8 +1,3 @@
-@property --rotation {
-	syntax: "<angle>";
-	initial-value: 0turn;
-	inherits: false;
-}
 body{
     font-size: 40pt;
     position: relative;
@@ -154,19 +149,19 @@ header nav .ioMenuMovile img{
     background: linear-gradient(90deg in lch longer hue, oklch(105% 90% 0) 0 0);
     background-size: 500% 100%;
     animation: blend 30s infinite linear;
-    left: 30px;
+    left: 0px;
 }
 #Contactame::after{
     content: '';
     filter: blur(8px);
   position: absolute;
-  left: 0;
+  left: 0px;
   mix-blend-mode: plus-lighter;
 }
 #Descargar{
     background: #5d5d5d;
     color: white;
-    left: 30px;
+    left: -10px;
 }
 #slider #Sobremi{
     width: 100%;
@@ -652,6 +647,12 @@ footer p{
     #slider #Inicio .button_principal{
         font-size: 45px;
         width: 50%;
+    }
+    #Contactame, #Contactame::after{
+        left: 30px;
+    }
+    #Descargar{
+        left:30px
     }
     #slider #informacion {
         height: 350px;
