@@ -67,11 +67,11 @@ header nav .ioMenuMovile img{
     --color4: #1efbff;
     --color5: #00e9ec;
     text-shadow: 
-    0 0 10px var(--color1),
-    0 0 20px var(--color2),
-    0 0 40px var(--color3),
-    0 0 80px var(--color4),
-    0 0 100px var(--color4);
+    0 0 5px var(--color1),
+    0 0 10px var(--color2),
+    0 0 15px var(--color3),
+    0 0 20px var(--color4),
+    0 0 30px var(--color4);
 }
 #slider{
     width: 100%;
@@ -117,9 +117,9 @@ header nav .ioMenuMovile img{
     text-shadow: 
     0 0 10px var(--color1),
     0 0 20px var(--color2),
-    0 0 40px var(--color3),
-    0 0 80px var(--color4),
-    0 0 100px var(--color4);
+    0 0 30px var(--color3),
+    0 0 40px var(--color4),
+    0 0 50px var(--color4);
 }
 #slider #Inicio .mainlogo h2 strong{
     color: #e2fefe;
@@ -129,11 +129,11 @@ header nav .ioMenuMovile img{
     --color4: #1efbff;
     --color5: #00e9ec;
     text-shadow: 
-    0 0 10px var(--color1),
-    0 0 20px var(--color2),
-    0 0 40px var(--color3),
-    0 0 80px var(--color4),
-    0 0 100px var(--color4);
+    0 0 5px var(--color1),
+    0 0 10px var(--color2),
+    0 0 15px var(--color3),
+    0 0 20px var(--color4),
+    0 0 30px var(--color4);
 }
 #slider #Inicio .mainlogo figure img{
     width: 100%;
@@ -198,11 +198,11 @@ header nav .ioMenuMovile img{
     --color4: #1efbff;
     --color5: #00e9ec;
     text-shadow: 
-    0 0 10px var(--color1),
-    0 0 20px var(--color2),
-    0 0 40px var(--color3),
-    0 0 80px var(--color4),
-    0 0 100px var(--color4);
+    0 0 5px var(--color1),
+    0 0 10px var(--color2),
+    0 0 15px var(--color3),
+    0 0 20px var(--color4),
+    0 0 30px var(--color4);
 }
 #informacion figure{
     width: 100%;
@@ -230,11 +230,11 @@ header nav .ioMenuMovile img{
     --color4: magenta;
     --color5: #b81d70;
     text-shadow: 
-    0 0 10px var(--color1),
-    0 0 20px var(--color2),
-    0 0 40px var(--color3),
-    0 0 80px var(--color4),
-    0 0 100px var(--color4);
+    0 0 5px var(--color1),
+    0 0 10px var(--color2),
+    0 0 15px var(--color3),
+    0 0 20px var(--color4),
+    0 0 30px var(--color4);
 }
 #formacion{
     width: 90%;
@@ -334,11 +334,11 @@ header nav .ioMenuMovile img{
     --color4: #ffb41e;
     --color5: #f39a00;
     text-shadow: 
-    0 0 10px var(--color1),
-    0 0 20px var(--color2),
-    0 0 40px var(--color3),
-    0 0 80px var(--color4),
-    0 0 100px var(--color4);
+    0 0 5px var(--color1),
+    0 0 10px var(--color2),
+    0 0 15px var(--color3),
+    0 0 20px var(--color4),
+    0 0 30px var(--color4);
 }
 #Portafolio #pagina_db p{
     font-size: 15px;
@@ -409,11 +409,11 @@ header nav .ioMenuMovile img{
     --color4: magenta;
     --color5: #b81d70;
     text-shadow: 
-    0 0 10px var(--color1),
-    0 0 20px var(--color2),
-    0 0 40px var(--color3),
-    0 0 80px var(--color4),
-    0 0 100px var(--color4);
+    0 0 5px var(--color1),
+    0 0 10px var(--color2),
+    0 0 15px var(--color3),
+    0 0 20px var(--color4),
+    0 0 30px var(--color4);
 }
 #contact_form #close_form:hover{
     cursor: pointer;
@@ -433,11 +433,11 @@ header nav .ioMenuMovile img{
     --color4: #1efbff;
     --color5: #00e9ec;
     text-shadow: 
-    0 0 10px var(--color1),
-    0 0 20px var(--color2),
-    0 0 40px var(--color3),
-    0 0 80px var(--color4),
-    0 0 100px var(--color4);
+    0 0 5px var(--color1),
+    0 0 10px var(--color2),
+    0 0 15px var(--color3),
+    0 0 20px var(--color4),
+    0 0 30px var(--color4);
 }
 #contact_form #hola{
     width: 80%;
@@ -452,11 +452,11 @@ header nav .ioMenuMovile img{
     --color4: magenta;
     --color5: #b81d70;
     text-shadow: 
-    0 0 10px var(--color1),
-    0 0 20px var(--color2),
-    0 0 40px var(--color3),
-    0 0 80px var(--color4),
-    0 0 100px var(--color4);
+    0 0 5px var(--color1),
+    0 0 10px var(--color2),
+    0 0 15px var(--color3),
+    0 0 20px var(--color4),
+    0 0 30px var(--color4);
 }
 #contact_form input,
 #contact_form textarea{
@@ -477,11 +477,11 @@ header nav .ioMenuMovile img{
     --color4: magenta;
     --color5: #b81d70;
     text-shadow: 
-    0 0 10px var(--color1),
-    0 0 20px var(--color2),
-    0 0 40px var(--color3),
-    0 0 80px var(--color4),
-    0 0 100px var(--color4);
+    0 0 5px var(--color1),
+    0 0 10px var(--color2),
+    0 0 15px var(--color3),
+    0 0 20px var(--color4),
+    0 0 30px var(--color4);
 }
 #contact_form #button{
     border: none;
@@ -514,11 +514,11 @@ header nav .ioMenuMovile img{
     --color4: magenta;
     --color5: #b81d70;
     text-shadow: 
-    0 0 10px var(--color1),
-    0 0 20px var(--color2),
-    0 0 40px var(--color3),
-    0 0 80px var(--color4),
-    0 0 100px var(--color4);
+    0 0 5px var(--color1),
+    0 0 10px var(--color2),
+    0 0 15px var(--color3),
+    0 0 20px var(--color4),
+    0 0 30px var(--color4);
 }
 footer{
     width: 100%;
