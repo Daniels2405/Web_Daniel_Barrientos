@@ -154,14 +154,15 @@ header nav .ioMenuMovile img{
 #Contactame::after{
     content: '';
     filter: blur(8px);
-  position: absolute;
-  left: 0px;
-  mix-blend-mode: plus-lighter;
+    position: absolute;
+    left: 0px;
+    mix-blend-mode: plus-lighter;
 }
 #Descargar{
     background: #5d5d5d;
     color: white;
-    left: -10px;
+    left: -30px;
+    font-size: 25px;
 }
 #slider #Sobremi{
     width: 100%;
@@ -349,7 +350,6 @@ header nav .ioMenuMovile img{
     color: white;
 }
 #button_contact{
-    background: #ffdb00;
     width: 60px;
     height: 60px;
     position: fixed;
@@ -527,15 +527,6 @@ footer{
     transition-duration: 0.7s;
     display: none;
 }
-footer::before{
-    content: '';
-    border-style: solid;
-    border-width: 20px 20px 20px 20px;
-    border-color: transparent transparent #4f4f4f transparent;
-    position: absolute;
-    left: 50%px;
-    top: -40px;
-}
 footer .rrss{
     margin-top: 40px;
     width: 100%;
@@ -693,6 +684,13 @@ footer p{
         bottom: 0vh;
     }
     footer::before{
+        content: '';
+        border-style: solid;
+        border-width: 30px 30px 30px 30px;
+        border-color: transparent transparent #4f4f4f transparent;
+        position: absolute;
+        left: 50%px;
+        top: -55px;    
         display: inline-block;
     }
 
